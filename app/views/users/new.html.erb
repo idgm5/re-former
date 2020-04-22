@@ -1,4 +1,9 @@
 <h1>Login</h1>
+  <ul>
+  <% @user.errors.full_messages.each do |error| %>
+    <li><%= error %></li>
+  <% end %>
+  </ul>
 <!--
 
 <form accept-charset="UTF-8" action="/users" method="post">
@@ -27,7 +32,7 @@
 <% end %> -->
 
 
-<%= form_for [ @user ] do |f| %>
+<%= form_for @user do |f| %>
   <p>
     <%= f.label :username %><br />
     <%= f.text_field :username, :placeholder => 'Your username' %>
