@@ -1,5 +1,5 @@
 # re-former
-An Odin project about forms on rails
+Project: Bare Metal forms and Helpers
 
 ## Project specifications
 
